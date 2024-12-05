@@ -4,10 +4,10 @@ gdjs.LeaderboardCode.GDLeaderboardDialogObjects1= [];
 gdjs.LeaderboardCode.GDLeaderboardDialogObjects2= [];
 gdjs.LeaderboardCode.GDPlatformObjects1= [];
 gdjs.LeaderboardCode.GDPlatformObjects2= [];
-gdjs.LeaderboardCode.GDBackgroundObjects1= [];
-gdjs.LeaderboardCode.GDBackgroundObjects2= [];
 gdjs.LeaderboardCode.GDDustParticlesObjects1= [];
 gdjs.LeaderboardCode.GDDustParticlesObjects2= [];
+gdjs.LeaderboardCode.GDBackgroundObjects1= [];
+gdjs.LeaderboardCode.GDBackgroundObjects2= [];
 
 
 gdjs.LeaderboardCode.eventsList0 = function(runtimeScene) {
@@ -85,20 +85,20 @@ gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length = 0;
 gdjs.LeaderboardCode.GDLeaderboardDialogObjects2.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects1.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects2.length = 0;
-gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
-gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects1.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects2.length = 0;
+gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
+gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
 
 gdjs.LeaderboardCode.eventsList0(runtimeScene);
 gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length = 0;
 gdjs.LeaderboardCode.GDLeaderboardDialogObjects2.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects1.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects2.length = 0;
-gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
-gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects1.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects2.length = 0;
+gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
+gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
 
 
 return;

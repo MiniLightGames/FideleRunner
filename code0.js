@@ -48,12 +48,12 @@ gdjs.IntroCode.GDNewSpriteObjects3= [];
 gdjs.IntroCode.GDPlatformObjects1= [];
 gdjs.IntroCode.GDPlatformObjects2= [];
 gdjs.IntroCode.GDPlatformObjects3= [];
-gdjs.IntroCode.GDBackgroundObjects1= [];
-gdjs.IntroCode.GDBackgroundObjects2= [];
-gdjs.IntroCode.GDBackgroundObjects3= [];
 gdjs.IntroCode.GDDustParticlesObjects1= [];
 gdjs.IntroCode.GDDustParticlesObjects2= [];
 gdjs.IntroCode.GDDustParticlesObjects3= [];
+gdjs.IntroCode.GDBackgroundObjects1= [];
+gdjs.IntroCode.GDBackgroundObjects2= [];
+gdjs.IntroCode.GDBackgroundObjects3= [];
 
 
 gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignArrowObjects2Objects = Hashtable.newFrom({"SignArrow": gdjs.IntroCode.GDSignArrowObjects2});
@@ -124,7 +124,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12109108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11950548);
 }
 }
 if (isConditionTrue_0) {
@@ -146,7 +146,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects1Objects, runtimeScene, true, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9723572);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11951452);
 }
 }
 if (isConditionTrue_0) {
@@ -245,12 +245,12 @@ gdjs.IntroCode.GDNewSpriteObjects3.length = 0;
 gdjs.IntroCode.GDPlatformObjects1.length = 0;
 gdjs.IntroCode.GDPlatformObjects2.length = 0;
 gdjs.IntroCode.GDPlatformObjects3.length = 0;
-gdjs.IntroCode.GDBackgroundObjects1.length = 0;
-gdjs.IntroCode.GDBackgroundObjects2.length = 0;
-gdjs.IntroCode.GDBackgroundObjects3.length = 0;
 gdjs.IntroCode.GDDustParticlesObjects1.length = 0;
 gdjs.IntroCode.GDDustParticlesObjects2.length = 0;
 gdjs.IntroCode.GDDustParticlesObjects3.length = 0;
+gdjs.IntroCode.GDBackgroundObjects1.length = 0;
+gdjs.IntroCode.GDBackgroundObjects2.length = 0;
+gdjs.IntroCode.GDBackgroundObjects3.length = 0;
 
 gdjs.IntroCode.eventsList3(runtimeScene);
 gdjs.IntroCode.GDScoreTextObjects1.length = 0;
@@ -301,12 +301,12 @@ gdjs.IntroCode.GDNewSpriteObjects3.length = 0;
 gdjs.IntroCode.GDPlatformObjects1.length = 0;
 gdjs.IntroCode.GDPlatformObjects2.length = 0;
 gdjs.IntroCode.GDPlatformObjects3.length = 0;
-gdjs.IntroCode.GDBackgroundObjects1.length = 0;
-gdjs.IntroCode.GDBackgroundObjects2.length = 0;
-gdjs.IntroCode.GDBackgroundObjects3.length = 0;
 gdjs.IntroCode.GDDustParticlesObjects1.length = 0;
 gdjs.IntroCode.GDDustParticlesObjects2.length = 0;
 gdjs.IntroCode.GDDustParticlesObjects3.length = 0;
+gdjs.IntroCode.GDBackgroundObjects1.length = 0;
+gdjs.IntroCode.GDBackgroundObjects2.length = 0;
+gdjs.IntroCode.GDBackgroundObjects3.length = 0;
 
 
 return;
