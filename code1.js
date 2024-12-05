@@ -859,7 +859,7 @@ gdjs.GameCode.GDBonusObjectObjects4.length = 0;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) > 25;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) > 1;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Platform"), gdjs.GameCode.GDPlatformObjects4);
 gdjs.GameCode.GDCactusObstacleObjects4.length = 0;
