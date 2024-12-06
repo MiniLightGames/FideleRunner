@@ -45,6 +45,12 @@ gdjs.IntroCode.GDStartTextObjects3= [];
 gdjs.IntroCode.GDNewSpriteObjects1= [];
 gdjs.IntroCode.GDNewSpriteObjects2= [];
 gdjs.IntroCode.GDNewSpriteObjects3= [];
+gdjs.IntroCode.GDMoney2Objects1= [];
+gdjs.IntroCode.GDMoney2Objects2= [];
+gdjs.IntroCode.GDMoney2Objects3= [];
+gdjs.IntroCode.GDMoneyValueObjects1= [];
+gdjs.IntroCode.GDMoneyValueObjects2= [];
+gdjs.IntroCode.GDMoneyValueObjects3= [];
 gdjs.IntroCode.GDPlatformObjects1= [];
 gdjs.IntroCode.GDPlatformObjects2= [];
 gdjs.IntroCode.GDPlatformObjects3= [];
@@ -168,11 +174,17 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("MoneyValue"), gdjs.IntroCode.GDMoneyValueObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.IntroCode.GDScoreTextObjects1);
 {for(var i = 0, len = gdjs.IntroCode.GDScoreTextObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDScoreTextObjects1[i].setTextAlignment("center");
 }
 }{gdjs.evtTools.sound.playMusic(runtimeScene, "LeaderboardMusic.mp3", true, 30, 1);
+}{gdjs.evtTools.storage.readStringFromJSONFile("Saves", "Saves", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1));
+}{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(1));
+}{for(var i = 0, len = gdjs.IntroCode.GDMoneyValueObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDMoneyValueObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Money").getAsNumber()));
+}
 }}
 
 }
@@ -189,6 +201,16 @@ gdjs.IntroCode.eventsList1(runtimeScene);
 
 
 gdjs.IntroCode.eventsList2(runtimeScene);
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
 }
 
 
@@ -242,6 +264,12 @@ gdjs.IntroCode.GDStartTextObjects3.length = 0;
 gdjs.IntroCode.GDNewSpriteObjects1.length = 0;
 gdjs.IntroCode.GDNewSpriteObjects2.length = 0;
 gdjs.IntroCode.GDNewSpriteObjects3.length = 0;
+gdjs.IntroCode.GDMoney2Objects1.length = 0;
+gdjs.IntroCode.GDMoney2Objects2.length = 0;
+gdjs.IntroCode.GDMoney2Objects3.length = 0;
+gdjs.IntroCode.GDMoneyValueObjects1.length = 0;
+gdjs.IntroCode.GDMoneyValueObjects2.length = 0;
+gdjs.IntroCode.GDMoneyValueObjects3.length = 0;
 gdjs.IntroCode.GDPlatformObjects1.length = 0;
 gdjs.IntroCode.GDPlatformObjects2.length = 0;
 gdjs.IntroCode.GDPlatformObjects3.length = 0;
@@ -298,6 +326,12 @@ gdjs.IntroCode.GDStartTextObjects3.length = 0;
 gdjs.IntroCode.GDNewSpriteObjects1.length = 0;
 gdjs.IntroCode.GDNewSpriteObjects2.length = 0;
 gdjs.IntroCode.GDNewSpriteObjects3.length = 0;
+gdjs.IntroCode.GDMoney2Objects1.length = 0;
+gdjs.IntroCode.GDMoney2Objects2.length = 0;
+gdjs.IntroCode.GDMoney2Objects3.length = 0;
+gdjs.IntroCode.GDMoneyValueObjects1.length = 0;
+gdjs.IntroCode.GDMoneyValueObjects2.length = 0;
+gdjs.IntroCode.GDMoneyValueObjects3.length = 0;
 gdjs.IntroCode.GDPlatformObjects1.length = 0;
 gdjs.IntroCode.GDPlatformObjects2.length = 0;
 gdjs.IntroCode.GDPlatformObjects3.length = 0;

@@ -1,7 +1,19 @@
 gdjs.LeaderboardCode = {};
 gdjs.LeaderboardCode.localVariables = [];
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects1= [];
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects2= [];
+gdjs.LeaderboardCode.GDPanelObjects1= [];
+gdjs.LeaderboardCode.GDPanelObjects2= [];
+gdjs.LeaderboardCode.GDGreenButtonObjects1= [];
+gdjs.LeaderboardCode.GDGreenButtonObjects2= [];
+gdjs.LeaderboardCode.GDBlueButtonObjects1= [];
+gdjs.LeaderboardCode.GDBlueButtonObjects2= [];
+gdjs.LeaderboardCode.GDDistanceObjects1= [];
+gdjs.LeaderboardCode.GDDistanceObjects2= [];
+gdjs.LeaderboardCode.GDMoney2Objects1= [];
+gdjs.LeaderboardCode.GDMoney2Objects2= [];
+gdjs.LeaderboardCode.GDMineyValueObjects1= [];
+gdjs.LeaderboardCode.GDMineyValueObjects2= [];
+gdjs.LeaderboardCode.GDDistValueObjects1= [];
+gdjs.LeaderboardCode.GDDistValueObjects2= [];
 gdjs.LeaderboardCode.GDPlatformObjects1= [];
 gdjs.LeaderboardCode.GDPlatformObjects2= [];
 gdjs.LeaderboardCode.GDDustParticlesObjects1= [];
@@ -19,14 +31,12 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("LeaderboardDialog"), gdjs.LeaderboardCode.GDLeaderboardDialogObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MineyValue"), gdjs.LeaderboardCode.GDMineyValueObjects1);
 {gdjs.evtTools.sound.playMusic(runtimeScene, "LeaderboardMusic.mp3", true, 70, 1);
-}{for(var i = 0, len = gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length ;i < len;++i) {
-    gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[i].SetScore(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.LeaderboardCode.GDMineyValueObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDMineyValueObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()));
 }
-}{for(var i = 0, len = gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length ;i < len;++i) {
-    gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[i].SetDefaultPlayerName(runtimeScene.getGame().getVariables().getFromIndex(1).getAsString(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
+}{gdjs.evtTools.storage.writeStringInJSONFile("Saves", "Saves", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }}
 
 }
@@ -34,18 +44,18 @@ gdjs.copyArray(runtimeScene.getObjects("LeaderboardDialog"), gdjs.LeaderboardCod
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("LeaderboardDialog"), gdjs.LeaderboardCode.GDLeaderboardDialogObjects1);
+gdjs.copyArray(runtimeScene.getObjects("GreenButton"), gdjs.LeaderboardCode.GDGreenButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length;i<l;++i) {
-    if ( gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[i].IsRestartClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.LeaderboardCode.GDGreenButtonObjects1.length;i<l;++i) {
+    if ( gdjs.LeaderboardCode.GDGreenButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[k] = gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[i];
+        gdjs.LeaderboardCode.GDGreenButtonObjects1[k] = gdjs.LeaderboardCode.GDGreenButtonObjects1[i];
         ++k;
     }
 }
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length = k;
+gdjs.LeaderboardCode.GDGreenButtonObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
 }}
@@ -55,22 +65,20 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("LeaderboardDialog"), gdjs.LeaderboardCode.GDLeaderboardDialogObjects1);
+gdjs.copyArray(runtimeScene.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length;i<l;++i) {
-    if ( gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[i].IsScoreSubmitted((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.LeaderboardCode.GDBlueButtonObjects1.length;i<l;++i) {
+    if ( gdjs.LeaderboardCode.GDBlueButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[k] = gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[i];
+        gdjs.LeaderboardCode.GDBlueButtonObjects1[k] = gdjs.LeaderboardCode.GDBlueButtonObjects1[i];
         ++k;
     }
 }
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length = k;
+gdjs.LeaderboardCode.GDBlueButtonObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.LeaderboardCode.GDLeaderboardDialogObjects1 */
-{runtimeScene.getGame().getVariables().getFromIndex(1).setString((( gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length === 0 ) ? "" :gdjs.LeaderboardCode.GDLeaderboardDialogObjects1[0].PlayerName((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Intro", false);
 }}
 
 }
@@ -81,8 +89,20 @@ if (isConditionTrue_0) {
 gdjs.LeaderboardCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length = 0;
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects2.length = 0;
+gdjs.LeaderboardCode.GDPanelObjects1.length = 0;
+gdjs.LeaderboardCode.GDPanelObjects2.length = 0;
+gdjs.LeaderboardCode.GDGreenButtonObjects1.length = 0;
+gdjs.LeaderboardCode.GDGreenButtonObjects2.length = 0;
+gdjs.LeaderboardCode.GDBlueButtonObjects1.length = 0;
+gdjs.LeaderboardCode.GDBlueButtonObjects2.length = 0;
+gdjs.LeaderboardCode.GDDistanceObjects1.length = 0;
+gdjs.LeaderboardCode.GDDistanceObjects2.length = 0;
+gdjs.LeaderboardCode.GDMoney2Objects1.length = 0;
+gdjs.LeaderboardCode.GDMoney2Objects2.length = 0;
+gdjs.LeaderboardCode.GDMineyValueObjects1.length = 0;
+gdjs.LeaderboardCode.GDMineyValueObjects2.length = 0;
+gdjs.LeaderboardCode.GDDistValueObjects1.length = 0;
+gdjs.LeaderboardCode.GDDistValueObjects2.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects1.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects2.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects1.length = 0;
@@ -91,8 +111,20 @@ gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
 gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
 
 gdjs.LeaderboardCode.eventsList0(runtimeScene);
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects1.length = 0;
-gdjs.LeaderboardCode.GDLeaderboardDialogObjects2.length = 0;
+gdjs.LeaderboardCode.GDPanelObjects1.length = 0;
+gdjs.LeaderboardCode.GDPanelObjects2.length = 0;
+gdjs.LeaderboardCode.GDGreenButtonObjects1.length = 0;
+gdjs.LeaderboardCode.GDGreenButtonObjects2.length = 0;
+gdjs.LeaderboardCode.GDBlueButtonObjects1.length = 0;
+gdjs.LeaderboardCode.GDBlueButtonObjects2.length = 0;
+gdjs.LeaderboardCode.GDDistanceObjects1.length = 0;
+gdjs.LeaderboardCode.GDDistanceObjects2.length = 0;
+gdjs.LeaderboardCode.GDMoney2Objects1.length = 0;
+gdjs.LeaderboardCode.GDMoney2Objects2.length = 0;
+gdjs.LeaderboardCode.GDMineyValueObjects1.length = 0;
+gdjs.LeaderboardCode.GDMineyValueObjects2.length = 0;
+gdjs.LeaderboardCode.GDDistValueObjects1.length = 0;
+gdjs.LeaderboardCode.GDDistValueObjects2.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects1.length = 0;
 gdjs.LeaderboardCode.GDPlatformObjects2.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects1.length = 0;

@@ -631,7 +631,7 @@ gdjs.GameCode.eventsList9 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(0).add(Math.round(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * 100));
+{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Score").add(Math.round(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * 25));
 }}
 
 }
@@ -650,7 +650,8 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.GameCode.GDDinoObjects4 */
 gdjs.GameCode.GDBonusParticleObjects4.length = 0;
 
-{runtimeScene.getGame().getVariables().getFromIndex(0).add(500);
+{runtimeScene.getGame().getVariables().getFromIndex(0).add(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Money").add(1);
 }{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBonusParticleObjects4Objects, (( gdjs.GameCode.GDDinoObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDDinoObjects4[0].getCenterXInScene()), (( gdjs.GameCode.GDDinoObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDDinoObjects4[0].getCenterYInScene()), "");
 }{for(var i = 0, len = gdjs.GameCode.GDBonusParticleObjects4.length ;i < len;++i) {
     gdjs.GameCode.GDBonusParticleObjects4[i].setAngle(-(90));
@@ -1172,7 +1173,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.GameCode.GDScoreTextObjects2);
 {for(var i = 0, len = gdjs.GameCode.GDScoreTextObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score   " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
+    gdjs.GameCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score   " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Score")));
 }
 }
 { //Subevents
@@ -1269,10 +1270,11 @@ gdjs.copyArray(runtimeScene.getObjects("Dino"), gdjs.GameCode.GDDinoObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDDinoObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDDinoObjects1[i].getBehavior("Animation").setAnimationName("Idle");
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Score").setNumber(0);
 }{for(var i = 0, len = gdjs.GameCode.GDDinoObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDDinoObjects1[i].activateBehavior("PlatformerObject", false);
 }
+}{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
 }
 { //Subevents
 gdjs.GameCode.eventsList0(runtimeScene);} //End of subevents
