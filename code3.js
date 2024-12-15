@@ -41,7 +41,7 @@ gdjs.RegisterCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("status")) == "201";
+isConditionTrue_0 = gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 {gdjs.evtTools.storage.writeStringInJSONFile("Player", "Player", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(2)));
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Intro", false);
@@ -50,7 +50,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.RegisterCode.asyncCallback9953468 = function (runtimeScene, asyncObjectsList) {
+};gdjs.RegisterCode.asyncCallback12113636 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.RegisterCode.localVariables);
 
 { //Subevents
@@ -67,14 +67,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.RegisterCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.RegisterCode.asyncCallback9953468(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.RegisterCode.asyncCallback12113636(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.RegisterCode.asyncCallback12109516 = function (runtimeScene, asyncObjectsList) {
+};gdjs.RegisterCode.asyncCallback12113956 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.RegisterCode.localVariables);
 
 { //Subevents
@@ -90,7 +90,7 @@ gdjs.RegisterCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.RegisterCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.RegisterCode.asyncCallback12109516(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.RegisterCode.asyncCallback12113956(runtimeScene, asyncObjectsList)));
 }
 }
 
