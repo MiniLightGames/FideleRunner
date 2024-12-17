@@ -12,38 +12,6 @@ gdjs.IntroCode.GDSignArrowObjects1= [];
 gdjs.IntroCode.GDSignArrowObjects2= [];
 gdjs.IntroCode.GDSignArrowObjects3= [];
 gdjs.IntroCode.GDSignArrowObjects4= [];
-gdjs.IntroCode.GDPlatformRightObjects1= [];
-gdjs.IntroCode.GDPlatformRightObjects2= [];
-gdjs.IntroCode.GDPlatformRightObjects3= [];
-gdjs.IntroCode.GDPlatformRightObjects4= [];
-gdjs.IntroCode.GDPlatformMiddleObjects1= [];
-gdjs.IntroCode.GDPlatformMiddleObjects2= [];
-gdjs.IntroCode.GDPlatformMiddleObjects3= [];
-gdjs.IntroCode.GDPlatformMiddleObjects4= [];
-gdjs.IntroCode.GDPlatformLeftObjects1= [];
-gdjs.IntroCode.GDPlatformLeftObjects2= [];
-gdjs.IntroCode.GDPlatformLeftObjects3= [];
-gdjs.IntroCode.GDPlatformLeftObjects4= [];
-gdjs.IntroCode.GDIslandObjects1= [];
-gdjs.IntroCode.GDIslandObjects2= [];
-gdjs.IntroCode.GDIslandObjects3= [];
-gdjs.IntroCode.GDIslandObjects4= [];
-gdjs.IntroCode.GDSkeletonObjects1= [];
-gdjs.IntroCode.GDSkeletonObjects2= [];
-gdjs.IntroCode.GDSkeletonObjects3= [];
-gdjs.IntroCode.GDSkeletonObjects4= [];
-gdjs.IntroCode.GDGrass2Objects1= [];
-gdjs.IntroCode.GDGrass2Objects2= [];
-gdjs.IntroCode.GDGrass2Objects3= [];
-gdjs.IntroCode.GDGrass2Objects4= [];
-gdjs.IntroCode.GDCactus3Objects1= [];
-gdjs.IntroCode.GDCactus3Objects2= [];
-gdjs.IntroCode.GDCactus3Objects3= [];
-gdjs.IntroCode.GDCactus3Objects4= [];
-gdjs.IntroCode.GDCactus2Objects1= [];
-gdjs.IntroCode.GDCactus2Objects2= [];
-gdjs.IntroCode.GDCactus2Objects3= [];
-gdjs.IntroCode.GDCactus2Objects4= [];
 gdjs.IntroCode.GDTreeObjects1= [];
 gdjs.IntroCode.GDTreeObjects2= [];
 gdjs.IntroCode.GDTreeObjects3= [];
@@ -56,10 +24,6 @@ gdjs.IntroCode.GDStartTextObjects1= [];
 gdjs.IntroCode.GDStartTextObjects2= [];
 gdjs.IntroCode.GDStartTextObjects3= [];
 gdjs.IntroCode.GDStartTextObjects4= [];
-gdjs.IntroCode.GDNewSpriteObjects1= [];
-gdjs.IntroCode.GDNewSpriteObjects2= [];
-gdjs.IntroCode.GDNewSpriteObjects3= [];
-gdjs.IntroCode.GDNewSpriteObjects4= [];
 gdjs.IntroCode.GDMoney2Objects1= [];
 gdjs.IntroCode.GDMoney2Objects2= [];
 gdjs.IntroCode.GDMoney2Objects3= [];
@@ -123,7 +87,7 @@ if (true)
 }
 
 
-};gdjs.IntroCode.asyncCallback12975372 = function (runtimeScene, asyncObjectsList) {
+};gdjs.IntroCode.asyncCallback13042988 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 
 { //Subevents
@@ -140,14 +104,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(4), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback12975372(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(4), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback13042988(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.IntroCode.asyncCallback12974972 = function (runtimeScene, asyncObjectsList) {
+};gdjs.IntroCode.asyncCallback13044724 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 
 { //Subevents
@@ -163,7 +127,7 @@ gdjs.IntroCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "Promo", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback12974972(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "Promo", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback13044724(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -267,7 +231,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12976900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13055932);
 }
 }
 if (isConditionTrue_0) {
@@ -289,7 +253,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects1Objects, runtimeScene, true, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12970108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13056860);
 }
 }
 if (isConditionTrue_0) {
@@ -383,38 +347,6 @@ gdjs.IntroCode.GDSignArrowObjects1.length = 0;
 gdjs.IntroCode.GDSignArrowObjects2.length = 0;
 gdjs.IntroCode.GDSignArrowObjects3.length = 0;
 gdjs.IntroCode.GDSignArrowObjects4.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects1.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects2.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects3.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects4.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects1.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects2.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects3.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects4.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects1.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects2.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects3.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects4.length = 0;
-gdjs.IntroCode.GDIslandObjects1.length = 0;
-gdjs.IntroCode.GDIslandObjects2.length = 0;
-gdjs.IntroCode.GDIslandObjects3.length = 0;
-gdjs.IntroCode.GDIslandObjects4.length = 0;
-gdjs.IntroCode.GDSkeletonObjects1.length = 0;
-gdjs.IntroCode.GDSkeletonObjects2.length = 0;
-gdjs.IntroCode.GDSkeletonObjects3.length = 0;
-gdjs.IntroCode.GDSkeletonObjects4.length = 0;
-gdjs.IntroCode.GDGrass2Objects1.length = 0;
-gdjs.IntroCode.GDGrass2Objects2.length = 0;
-gdjs.IntroCode.GDGrass2Objects3.length = 0;
-gdjs.IntroCode.GDGrass2Objects4.length = 0;
-gdjs.IntroCode.GDCactus3Objects1.length = 0;
-gdjs.IntroCode.GDCactus3Objects2.length = 0;
-gdjs.IntroCode.GDCactus3Objects3.length = 0;
-gdjs.IntroCode.GDCactus3Objects4.length = 0;
-gdjs.IntroCode.GDCactus2Objects1.length = 0;
-gdjs.IntroCode.GDCactus2Objects2.length = 0;
-gdjs.IntroCode.GDCactus2Objects3.length = 0;
-gdjs.IntroCode.GDCactus2Objects4.length = 0;
 gdjs.IntroCode.GDTreeObjects1.length = 0;
 gdjs.IntroCode.GDTreeObjects2.length = 0;
 gdjs.IntroCode.GDTreeObjects3.length = 0;
@@ -427,10 +359,6 @@ gdjs.IntroCode.GDStartTextObjects1.length = 0;
 gdjs.IntroCode.GDStartTextObjects2.length = 0;
 gdjs.IntroCode.GDStartTextObjects3.length = 0;
 gdjs.IntroCode.GDStartTextObjects4.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects1.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects2.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects3.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects4.length = 0;
 gdjs.IntroCode.GDMoney2Objects1.length = 0;
 gdjs.IntroCode.GDMoney2Objects2.length = 0;
 gdjs.IntroCode.GDMoney2Objects3.length = 0;
@@ -465,38 +393,6 @@ gdjs.IntroCode.GDSignArrowObjects1.length = 0;
 gdjs.IntroCode.GDSignArrowObjects2.length = 0;
 gdjs.IntroCode.GDSignArrowObjects3.length = 0;
 gdjs.IntroCode.GDSignArrowObjects4.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects1.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects2.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects3.length = 0;
-gdjs.IntroCode.GDPlatformRightObjects4.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects1.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects2.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects3.length = 0;
-gdjs.IntroCode.GDPlatformMiddleObjects4.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects1.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects2.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects3.length = 0;
-gdjs.IntroCode.GDPlatformLeftObjects4.length = 0;
-gdjs.IntroCode.GDIslandObjects1.length = 0;
-gdjs.IntroCode.GDIslandObjects2.length = 0;
-gdjs.IntroCode.GDIslandObjects3.length = 0;
-gdjs.IntroCode.GDIslandObjects4.length = 0;
-gdjs.IntroCode.GDSkeletonObjects1.length = 0;
-gdjs.IntroCode.GDSkeletonObjects2.length = 0;
-gdjs.IntroCode.GDSkeletonObjects3.length = 0;
-gdjs.IntroCode.GDSkeletonObjects4.length = 0;
-gdjs.IntroCode.GDGrass2Objects1.length = 0;
-gdjs.IntroCode.GDGrass2Objects2.length = 0;
-gdjs.IntroCode.GDGrass2Objects3.length = 0;
-gdjs.IntroCode.GDGrass2Objects4.length = 0;
-gdjs.IntroCode.GDCactus3Objects1.length = 0;
-gdjs.IntroCode.GDCactus3Objects2.length = 0;
-gdjs.IntroCode.GDCactus3Objects3.length = 0;
-gdjs.IntroCode.GDCactus3Objects4.length = 0;
-gdjs.IntroCode.GDCactus2Objects1.length = 0;
-gdjs.IntroCode.GDCactus2Objects2.length = 0;
-gdjs.IntroCode.GDCactus2Objects3.length = 0;
-gdjs.IntroCode.GDCactus2Objects4.length = 0;
 gdjs.IntroCode.GDTreeObjects1.length = 0;
 gdjs.IntroCode.GDTreeObjects2.length = 0;
 gdjs.IntroCode.GDTreeObjects3.length = 0;
@@ -509,10 +405,6 @@ gdjs.IntroCode.GDStartTextObjects1.length = 0;
 gdjs.IntroCode.GDStartTextObjects2.length = 0;
 gdjs.IntroCode.GDStartTextObjects3.length = 0;
 gdjs.IntroCode.GDStartTextObjects4.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects1.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects2.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects3.length = 0;
-gdjs.IntroCode.GDNewSpriteObjects4.length = 0;
 gdjs.IntroCode.GDMoney2Objects1.length = 0;
 gdjs.IntroCode.GDMoney2Objects2.length = 0;
 gdjs.IntroCode.GDMoney2Objects3.length = 0;
