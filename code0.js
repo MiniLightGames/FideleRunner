@@ -189,7 +189,7 @@ if (isConditionTrue_0) {
 {gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "Promo", "https://promocodes-29fa.restdb.io/rest/promocodes", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "Promo", "GET", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "Promo", "content-type", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "7995fab1618cc964fb5c9cc3dddb93009726f", "Promo", "x-apikey", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "6761a744518e813a68087eef", "Promo", "x-apikey", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
 gdjs.IntroCode.eventsList3(runtimeScene);} //End of subevents
@@ -323,7 +323,7 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.IntroCode.GDScoreTextO
     gdjs.IntroCode.GDMoneyValueObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Money").getAsNumber()));
 }
 }{gdjs.evtTools.storage.readStringFromJSONFile("Shop", "Shop", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1));
-}{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(5));
+}{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)), runtimeScene.getGame().getVariables().getFromIndex(5));
 }
 { //Subevents
 gdjs.IntroCode.eventsList4(runtimeScene);} //End of subevents

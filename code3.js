@@ -3,35 +3,27 @@ gdjs.RegisterCode.localVariables = [];
 gdjs.RegisterCode.GDHeloObjects1= [];
 gdjs.RegisterCode.GDHeloObjects2= [];
 gdjs.RegisterCode.GDHeloObjects3= [];
-gdjs.RegisterCode.GDHeloObjects4= [];
 gdjs.RegisterCode.GDNameObjects1= [];
 gdjs.RegisterCode.GDNameObjects2= [];
 gdjs.RegisterCode.GDNameObjects3= [];
-gdjs.RegisterCode.GDNameObjects4= [];
 gdjs.RegisterCode.GDCityObjects1= [];
 gdjs.RegisterCode.GDCityObjects2= [];
 gdjs.RegisterCode.GDCityObjects3= [];
-gdjs.RegisterCode.GDCityObjects4= [];
 gdjs.RegisterCode.GDPhoneObjects1= [];
 gdjs.RegisterCode.GDPhoneObjects2= [];
 gdjs.RegisterCode.GDPhoneObjects3= [];
-gdjs.RegisterCode.GDPhoneObjects4= [];
 gdjs.RegisterCode.GDRegisterObjects1= [];
 gdjs.RegisterCode.GDRegisterObjects2= [];
 gdjs.RegisterCode.GDRegisterObjects3= [];
-gdjs.RegisterCode.GDRegisterObjects4= [];
 gdjs.RegisterCode.GDPlatformObjects1= [];
 gdjs.RegisterCode.GDPlatformObjects2= [];
 gdjs.RegisterCode.GDPlatformObjects3= [];
-gdjs.RegisterCode.GDPlatformObjects4= [];
 gdjs.RegisterCode.GDDustParticlesObjects1= [];
 gdjs.RegisterCode.GDDustParticlesObjects2= [];
 gdjs.RegisterCode.GDDustParticlesObjects3= [];
-gdjs.RegisterCode.GDDustParticlesObjects4= [];
 gdjs.RegisterCode.GDBackgroundObjects1= [];
 gdjs.RegisterCode.GDBackgroundObjects2= [];
 gdjs.RegisterCode.GDBackgroundObjects3= [];
-gdjs.RegisterCode.GDBackgroundObjects4= [];
 
 
 gdjs.RegisterCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
@@ -50,38 +42,14 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.RegisterCode.asyncCallback13180508 = function (runtimeScene, asyncObjectsList) {
+};gdjs.RegisterCode.asyncCallback13180828 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.RegisterCode.localVariables);
 
 { //Subevents
 gdjs.RegisterCode.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.RegisterCode.localVariables.length = 0;
 }
-gdjs.RegisterCode.eventsList1 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.RegisterCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.RegisterCode.asyncCallback13180508(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.RegisterCode.asyncCallback13180828 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.RegisterCode.localVariables);
-
-{ //Subevents
-gdjs.RegisterCode.eventsList1(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.RegisterCode.localVariables.length = 0;
-}
-gdjs.RegisterCode.eventsList2 = function(runtimeScene) {
+gdjs.RegisterCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -97,7 +65,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteR
 }
 
 
-};gdjs.RegisterCode.eventsList3 = function(runtimeScene) {
+};gdjs.RegisterCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -112,13 +80,13 @@ let isConditionTrue_0 = false;
 }{gdjs.evtsExt__AdvancedHTTP__SetJSONRequestBody.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
-gdjs.RegisterCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.RegisterCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.RegisterCode.eventsList4 = function(runtimeScene) {
+};gdjs.RegisterCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -157,13 +125,13 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.RegisterCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.RegisterCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.RegisterCode.eventsList5 = function(runtimeScene) {
+};gdjs.RegisterCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -172,8 +140,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.storage.clearJSONFile("Player");
-}{gdjs.evtTools.storage.readStringFromJSONFile("Player", "Player", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(3));
+{gdjs.evtTools.storage.readStringFromJSONFile("Player", "Player", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(3));
 }{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(3).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(2));
 }}
 
@@ -210,7 +177,7 @@ gdjs.RegisterCode.GDRegisterObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.RegisterCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.RegisterCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -224,69 +191,53 @@ runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.RegisterCode.GDHeloObjects1.length = 0;
 gdjs.RegisterCode.GDHeloObjects2.length = 0;
 gdjs.RegisterCode.GDHeloObjects3.length = 0;
-gdjs.RegisterCode.GDHeloObjects4.length = 0;
 gdjs.RegisterCode.GDNameObjects1.length = 0;
 gdjs.RegisterCode.GDNameObjects2.length = 0;
 gdjs.RegisterCode.GDNameObjects3.length = 0;
-gdjs.RegisterCode.GDNameObjects4.length = 0;
 gdjs.RegisterCode.GDCityObjects1.length = 0;
 gdjs.RegisterCode.GDCityObjects2.length = 0;
 gdjs.RegisterCode.GDCityObjects3.length = 0;
-gdjs.RegisterCode.GDCityObjects4.length = 0;
 gdjs.RegisterCode.GDPhoneObjects1.length = 0;
 gdjs.RegisterCode.GDPhoneObjects2.length = 0;
 gdjs.RegisterCode.GDPhoneObjects3.length = 0;
-gdjs.RegisterCode.GDPhoneObjects4.length = 0;
 gdjs.RegisterCode.GDRegisterObjects1.length = 0;
 gdjs.RegisterCode.GDRegisterObjects2.length = 0;
 gdjs.RegisterCode.GDRegisterObjects3.length = 0;
-gdjs.RegisterCode.GDRegisterObjects4.length = 0;
 gdjs.RegisterCode.GDPlatformObjects1.length = 0;
 gdjs.RegisterCode.GDPlatformObjects2.length = 0;
 gdjs.RegisterCode.GDPlatformObjects3.length = 0;
-gdjs.RegisterCode.GDPlatformObjects4.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects1.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects2.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects3.length = 0;
-gdjs.RegisterCode.GDDustParticlesObjects4.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects1.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects2.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects3.length = 0;
-gdjs.RegisterCode.GDBackgroundObjects4.length = 0;
 
-gdjs.RegisterCode.eventsList5(runtimeScene);
+gdjs.RegisterCode.eventsList4(runtimeScene);
 gdjs.RegisterCode.GDHeloObjects1.length = 0;
 gdjs.RegisterCode.GDHeloObjects2.length = 0;
 gdjs.RegisterCode.GDHeloObjects3.length = 0;
-gdjs.RegisterCode.GDHeloObjects4.length = 0;
 gdjs.RegisterCode.GDNameObjects1.length = 0;
 gdjs.RegisterCode.GDNameObjects2.length = 0;
 gdjs.RegisterCode.GDNameObjects3.length = 0;
-gdjs.RegisterCode.GDNameObjects4.length = 0;
 gdjs.RegisterCode.GDCityObjects1.length = 0;
 gdjs.RegisterCode.GDCityObjects2.length = 0;
 gdjs.RegisterCode.GDCityObjects3.length = 0;
-gdjs.RegisterCode.GDCityObjects4.length = 0;
 gdjs.RegisterCode.GDPhoneObjects1.length = 0;
 gdjs.RegisterCode.GDPhoneObjects2.length = 0;
 gdjs.RegisterCode.GDPhoneObjects3.length = 0;
-gdjs.RegisterCode.GDPhoneObjects4.length = 0;
 gdjs.RegisterCode.GDRegisterObjects1.length = 0;
 gdjs.RegisterCode.GDRegisterObjects2.length = 0;
 gdjs.RegisterCode.GDRegisterObjects3.length = 0;
-gdjs.RegisterCode.GDRegisterObjects4.length = 0;
 gdjs.RegisterCode.GDPlatformObjects1.length = 0;
 gdjs.RegisterCode.GDPlatformObjects2.length = 0;
 gdjs.RegisterCode.GDPlatformObjects3.length = 0;
-gdjs.RegisterCode.GDPlatformObjects4.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects1.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects2.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects3.length = 0;
-gdjs.RegisterCode.GDDustParticlesObjects4.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects1.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects2.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects3.length = 0;
-gdjs.RegisterCode.GDBackgroundObjects4.length = 0;
 
 
 return;
