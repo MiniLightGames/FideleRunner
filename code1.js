@@ -694,13 +694,31 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
 
-gdjs.copyArray(gdjs.GameCode.GDPlatformObjects4, gdjs.GameCode.GDPlatformObjects5);
-
 {for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
     gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (gdjs.randomFloatInRange(0.6, 0.95)));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(((( gdjs.GameCode.GDPlatformObjects5.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects5[0].getAABBTop()) - (155) * (gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScaleY())));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 1;
+if (isConditionTrue_0) {
+gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
+
+{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
+    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (1.2));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
 }
 }}
 
@@ -716,13 +734,11 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
 
-gdjs.copyArray(gdjs.GameCode.GDPlatformObjects4, gdjs.GameCode.GDPlatformObjects5);
-
 {for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
     gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (0.78));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(((( gdjs.GameCode.GDPlatformObjects5.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects5[0].getAABBTop()) - (155) * 0.78));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
 }
 }}
 
@@ -738,13 +754,11 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
 
-gdjs.copyArray(gdjs.GameCode.GDPlatformObjects4, gdjs.GameCode.GDPlatformObjects5);
-
 {for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
     gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (0.75));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(((( gdjs.GameCode.GDPlatformObjects5.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects5[0].getAABBTop()) - (155) * 0.75));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
 }
 }}
 
@@ -760,13 +774,11 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
 
-gdjs.copyArray(gdjs.GameCode.GDPlatformObjects4, gdjs.GameCode.GDPlatformObjects5);
-
 {for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (1.15));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (1.35));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(((( gdjs.GameCode.GDPlatformObjects5.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects5[0].getAABBTop()) - (145) * 1.25));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
 }
 }}
 
@@ -782,13 +794,11 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
 
-gdjs.copyArray(gdjs.GameCode.GDPlatformObjects4, gdjs.GameCode.GDPlatformObjects5);
-
 {for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (0.95));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (0.8));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(((( gdjs.GameCode.GDPlatformObjects5.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects5[0].getAABBTop()) - (145) * 0.95));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
 }
 }}
 
@@ -804,13 +814,11 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.GameCode.GDCactusObstacleObjects4, gdjs.GameCode.GDCactusObstacleObjects5);
 
-gdjs.copyArray(gdjs.GameCode.GDPlatformObjects4, gdjs.GameCode.GDPlatformObjects5);
-
 {for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (0.8));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").setScale(gdjs.GameCode.GDCactusObstacleObjects5[i].getBehavior("Scale").getScale() * (0.7));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects5.length ;i < len;++i) {
-    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(((( gdjs.GameCode.GDPlatformObjects5.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects5[0].getAABBTop()) - (145) * 0.85));
+    gdjs.GameCode.GDCactusObstacleObjects5[i].setY(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81);
 }
 }}
 
@@ -884,10 +892,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) >= 0;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Platform"), gdjs.GameCode.GDPlatformObjects4);
 gdjs.GameCode.GDCactusObstacleObjects4.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDCactusObstacleObjects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(8).getAsNumber() * 70, ((( gdjs.GameCode.GDPlatformObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDPlatformObjects4[0].getAABBTop()) - 155), "");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDCactusObstacleObjects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(8).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81, "");
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects4.length ;i < len;++i) {
     gdjs.GameCode.GDCactusObstacleObjects4[i].addPolarForce(180, runtimeScene.getScene().getVariables().getFromIndex(5).getAsNumber(), 1);
 }
