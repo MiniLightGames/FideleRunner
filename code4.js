@@ -685,6 +685,7 @@ for (var i = 0, k = 0, l = gdjs.ShopCode.GDShopTileObjects1.length;i<l;++i) {
 gdjs.ShopCode.GDShopTileObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.storage.writeStringInJSONFile("Shop", "Shop", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(5)));
+}{gdjs.evtTools.storage.writeStringInJSONFile("Saves", "Saves", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }}
 
 }
