@@ -48,72 +48,12 @@ gdjs.GameCode.GDDuckButtonObjects3= [];
 gdjs.GameCode.GDDuckButtonObjects4= [];
 gdjs.GameCode.GDDuckButtonObjects5= [];
 gdjs.GameCode.GDDuckButtonObjects6= [];
-gdjs.GameCode.GDLimitObjects1= [];
-gdjs.GameCode.GDLimitObjects2= [];
-gdjs.GameCode.GDLimitObjects3= [];
-gdjs.GameCode.GDLimitObjects4= [];
-gdjs.GameCode.GDLimitObjects5= [];
-gdjs.GameCode.GDLimitObjects6= [];
 gdjs.GameCode.GDDinoObjects1= [];
 gdjs.GameCode.GDDinoObjects2= [];
 gdjs.GameCode.GDDinoObjects3= [];
 gdjs.GameCode.GDDinoObjects4= [];
 gdjs.GameCode.GDDinoObjects5= [];
 gdjs.GameCode.GDDinoObjects6= [];
-gdjs.GameCode.GDHightObstacle1Objects1= [];
-gdjs.GameCode.GDHightObstacle1Objects2= [];
-gdjs.GameCode.GDHightObstacle1Objects3= [];
-gdjs.GameCode.GDHightObstacle1Objects4= [];
-gdjs.GameCode.GDHightObstacle1Objects5= [];
-gdjs.GameCode.GDHightObstacle1Objects6= [];
-gdjs.GameCode.GDHighObstacle2Objects1= [];
-gdjs.GameCode.GDHighObstacle2Objects2= [];
-gdjs.GameCode.GDHighObstacle2Objects3= [];
-gdjs.GameCode.GDHighObstacle2Objects4= [];
-gdjs.GameCode.GDHighObstacle2Objects5= [];
-gdjs.GameCode.GDHighObstacle2Objects6= [];
-gdjs.GameCode.GDHighObstacle3Objects1= [];
-gdjs.GameCode.GDHighObstacle3Objects2= [];
-gdjs.GameCode.GDHighObstacle3Objects3= [];
-gdjs.GameCode.GDHighObstacle3Objects4= [];
-gdjs.GameCode.GDHighObstacle3Objects5= [];
-gdjs.GameCode.GDHighObstacle3Objects6= [];
-gdjs.GameCode.GDMediumObstacle1Objects1= [];
-gdjs.GameCode.GDMediumObstacle1Objects2= [];
-gdjs.GameCode.GDMediumObstacle1Objects3= [];
-gdjs.GameCode.GDMediumObstacle1Objects4= [];
-gdjs.GameCode.GDMediumObstacle1Objects5= [];
-gdjs.GameCode.GDMediumObstacle1Objects6= [];
-gdjs.GameCode.GDMediumObstacle2Objects1= [];
-gdjs.GameCode.GDMediumObstacle2Objects2= [];
-gdjs.GameCode.GDMediumObstacle2Objects3= [];
-gdjs.GameCode.GDMediumObstacle2Objects4= [];
-gdjs.GameCode.GDMediumObstacle2Objects5= [];
-gdjs.GameCode.GDMediumObstacle2Objects6= [];
-gdjs.GameCode.GDMediumObstacle3Objects1= [];
-gdjs.GameCode.GDMediumObstacle3Objects2= [];
-gdjs.GameCode.GDMediumObstacle3Objects3= [];
-gdjs.GameCode.GDMediumObstacle3Objects4= [];
-gdjs.GameCode.GDMediumObstacle3Objects5= [];
-gdjs.GameCode.GDMediumObstacle3Objects6= [];
-gdjs.GameCode.GDLowObstacle1Objects1= [];
-gdjs.GameCode.GDLowObstacle1Objects2= [];
-gdjs.GameCode.GDLowObstacle1Objects3= [];
-gdjs.GameCode.GDLowObstacle1Objects4= [];
-gdjs.GameCode.GDLowObstacle1Objects5= [];
-gdjs.GameCode.GDLowObstacle1Objects6= [];
-gdjs.GameCode.GDLowObstacle2Objects1= [];
-gdjs.GameCode.GDLowObstacle2Objects2= [];
-gdjs.GameCode.GDLowObstacle2Objects3= [];
-gdjs.GameCode.GDLowObstacle2Objects4= [];
-gdjs.GameCode.GDLowObstacle2Objects5= [];
-gdjs.GameCode.GDLowObstacle2Objects6= [];
-gdjs.GameCode.GDLowObstacle3Objects1= [];
-gdjs.GameCode.GDLowObstacle3Objects2= [];
-gdjs.GameCode.GDLowObstacle3Objects3= [];
-gdjs.GameCode.GDLowObstacle3Objects4= [];
-gdjs.GameCode.GDLowObstacle3Objects5= [];
-gdjs.GameCode.GDLowObstacle3Objects6= [];
 gdjs.GameCode.GDMan1Objects1= [];
 gdjs.GameCode.GDMan1Objects2= [];
 gdjs.GameCode.GDMan1Objects3= [];
@@ -138,12 +78,12 @@ gdjs.GameCode.GDSasulka2Objects3= [];
 gdjs.GameCode.GDSasulka2Objects4= [];
 gdjs.GameCode.GDSasulka2Objects5= [];
 gdjs.GameCode.GDSasulka2Objects6= [];
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects1= [];
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects2= [];
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects3= [];
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects4= [];
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects5= [];
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects6= [];
+gdjs.GameCode.GDTutorObjects1= [];
+gdjs.GameCode.GDTutorObjects2= [];
+gdjs.GameCode.GDTutorObjects3= [];
+gdjs.GameCode.GDTutorObjects4= [];
+gdjs.GameCode.GDTutorObjects5= [];
+gdjs.GameCode.GDTutorObjects6= [];
 gdjs.GameCode.GDPlatformObjects1= [];
 gdjs.GameCode.GDPlatformObjects2= [];
 gdjs.GameCode.GDPlatformObjects3= [];
@@ -195,11 +135,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene));
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Limit"), gdjs.GameCode.GDLimitObjects1);
-{for(var i = 0, len = gdjs.GameCode.GDLimitObjects1.length ;i < len;++i) {
-    gdjs.GameCode.GDLimitObjects1[i].hide();
-}
-}}
+{}}
 
 }
 
@@ -213,11 +149,7 @@ gdjs.GameCode.eventsList1 = function(runtimeScene) {
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Dino"), gdjs.GameCode.GDDinoObjects3);
-gdjs.copyArray(runtimeScene.getObjects("Limit"), gdjs.GameCode.GDLimitObjects3);
-{for(var i = 0, len = gdjs.GameCode.GDLimitObjects3.length ;i < len;++i) {
-    gdjs.GameCode.GDLimitObjects3[i].hide();
-}
-}{for(var i = 0, len = gdjs.GameCode.GDDinoObjects3.length ;i < len;++i) {
+{}{for(var i = 0, len = gdjs.GameCode.GDDinoObjects3.length ;i < len;++i) {
     gdjs.GameCode.GDDinoObjects3[i].getBehavior("Animation").setAnimationName("Run");
 }
 }{for(var i = 0, len = gdjs.GameCode.GDDinoObjects3.length ;i < len;++i) {
@@ -240,7 +172,7 @@ gdjs.copyArray(runtimeScene.getObjects("Limit"), gdjs.GameCode.GDLimitObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13137404);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14451148);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Dino"), gdjs.GameCode.GDDinoObjects2);
@@ -286,9 +218,13 @@ if(isConditionTrue_1) {
 }
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Tutor"), gdjs.GameCode.GDTutorObjects2);
 {runtimeScene.getScene().getVariables().getFromIndex(3).setString("Playing");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "obstacle_spawn");
 }{runtimeScene.getScene().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene));
+}{for(var i = 0, len = gdjs.GameCode.GDTutorObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDTutorObjects2[i].hide();
+}
 }
 { //Subevents
 gdjs.GameCode.eventsList1(runtimeScene);} //End of subevents
@@ -353,7 +289,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12985388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14245788);
 }
 if (isConditionTrue_0) {
 /* Reuse gdjs.GameCode.GDDinoObjects4 */
@@ -387,7 +323,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDDinoObjects5.length;i<l;++i) {
 gdjs.GameCode.GDDinoObjects5.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12987356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14247756);
 }
 }
 if (isConditionTrue_0) {
@@ -416,7 +352,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDDinoObjects4.length;i<l;++i) {
 gdjs.GameCode.GDDinoObjects4.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12988596);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14248996);
 }
 }
 if (isConditionTrue_0) {
@@ -504,7 +440,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDDinoObjects4.length;i<l;++i) {
 gdjs.GameCode.GDDinoObjects4.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12989924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14250324);
 }
 }
 }
@@ -537,7 +473,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12991292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14251692);
 }
 }
 if (isConditionTrue_0) {
@@ -590,7 +526,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDDinoObjects4.length;i<l;++i) {
 gdjs.GameCode.GDDinoObjects4.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12986652);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14247052);
 }
 }
 if (isConditionTrue_0) {
@@ -792,11 +728,11 @@ gdjs.GameCode.GDMan1Objects5.length = 0;
 
 gdjs.GameCode.GDMan2Objects5.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDMan1Objects5Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(9).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.87, "");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDMan1Objects5Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(10).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.87, "");
 }{for(var i = 0, len = gdjs.GameCode.GDMan1Objects5.length ;i < len;++i) {
     gdjs.GameCode.GDMan1Objects5[i].addPolarForce(180, runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber(), 1);
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDMan2Objects5Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(9).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.87, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDMan2Objects5Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(10).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.87, "");
 }{for(var i = 0, len = gdjs.GameCode.GDMan2Objects5.length ;i < len;++i) {
     gdjs.GameCode.GDMan2Objects5[i].addPolarForce(180, runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber(), 1);
 }
@@ -822,11 +758,11 @@ gdjs.GameCode.GDSasulka1Objects4.length = 0;
 
 gdjs.GameCode.GDSasulka2Objects4.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDSasulka1Objects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(9).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.835, "");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDSasulka1Objects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(10).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.835, "");
 }{for(var i = 0, len = gdjs.GameCode.GDSasulka1Objects4.length ;i < len;++i) {
     gdjs.GameCode.GDSasulka1Objects4[i].addPolarForce(180, runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber(), 1);
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDSasulka2Objects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(9).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.835, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDSasulka2Objects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(10).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.835, "");
 }{for(var i = 0, len = gdjs.GameCode.GDSasulka2Objects4.length ;i < len;++i) {
     gdjs.GameCode.GDSasulka2Objects4[i].addPolarForce(180, runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber(), 1);
 }
@@ -852,7 +788,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 gdjs.GameCode.GDCactusObstacleObjects4.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDCactusObstacleObjects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(9).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81, "");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDCactusObstacleObjects4Objects, 100 + gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) + runtimeScene.getScene().getVariables().getFromIndex(10).getAsNumber() * 70, gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) * 0.81, "");
 }{for(var i = 0, len = gdjs.GameCode.GDCactusObstacleObjects4.length ;i < len;++i) {
     gdjs.GameCode.GDCactusObstacleObjects4[i].addPolarForce(180, runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber(), 1);
 }
@@ -910,9 +846,9 @@ gdjs.GameCode.eventsList13(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(6)) < 2000;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(6)) < 100;
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(6).add(0);
+{runtimeScene.getScene().getVariables().getFromIndex(6).setNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getAsNumber() + (gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) - runtimeScene.getScene().getVariables().getFromIndex(4).getAsNumber()));
 }}
 
 }
@@ -930,11 +866,11 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "obstacle_spawn") >= runtimeScene.getScene().getVariables().getFromIndex(7).getAsNumber();
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "obstacle_spawn") >= runtimeScene.getScene().getVariables().getFromIndex(8).getAsNumber();
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(gdjs.randomInRange(0, 6));
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.randomInRange(0, 3));
-}{runtimeScene.getScene().getVariables().getFromIndex(7).setNumber((gdjs.randomInRange(2, 3)));
+}{runtimeScene.getScene().getVariables().getFromIndex(8).setNumber((gdjs.randomInRange(2, 3) * (runtimeScene.getScene().getVariables().getFromIndex(7).getAsNumber() / runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber())));
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "obstacle_spawn");
 }
 { //Subevents
@@ -1366,72 +1302,12 @@ gdjs.GameCode.GDDuckButtonObjects3.length = 0;
 gdjs.GameCode.GDDuckButtonObjects4.length = 0;
 gdjs.GameCode.GDDuckButtonObjects5.length = 0;
 gdjs.GameCode.GDDuckButtonObjects6.length = 0;
-gdjs.GameCode.GDLimitObjects1.length = 0;
-gdjs.GameCode.GDLimitObjects2.length = 0;
-gdjs.GameCode.GDLimitObjects3.length = 0;
-gdjs.GameCode.GDLimitObjects4.length = 0;
-gdjs.GameCode.GDLimitObjects5.length = 0;
-gdjs.GameCode.GDLimitObjects6.length = 0;
 gdjs.GameCode.GDDinoObjects1.length = 0;
 gdjs.GameCode.GDDinoObjects2.length = 0;
 gdjs.GameCode.GDDinoObjects3.length = 0;
 gdjs.GameCode.GDDinoObjects4.length = 0;
 gdjs.GameCode.GDDinoObjects5.length = 0;
 gdjs.GameCode.GDDinoObjects6.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects1.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects2.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects3.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects4.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects5.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects6.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects1.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects2.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects3.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects4.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects5.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects6.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects1.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects2.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects3.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects4.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects5.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects6.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects1.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects2.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects3.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects4.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects5.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects6.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects1.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects2.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects3.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects4.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects5.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects6.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects1.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects2.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects3.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects4.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects5.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects6.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects1.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects2.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects3.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects4.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects5.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects6.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects1.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects2.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects3.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects4.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects5.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects6.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects1.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects2.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects3.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects4.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects5.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects6.length = 0;
 gdjs.GameCode.GDMan1Objects1.length = 0;
 gdjs.GameCode.GDMan1Objects2.length = 0;
 gdjs.GameCode.GDMan1Objects3.length = 0;
@@ -1456,12 +1332,12 @@ gdjs.GameCode.GDSasulka2Objects3.length = 0;
 gdjs.GameCode.GDSasulka2Objects4.length = 0;
 gdjs.GameCode.GDSasulka2Objects5.length = 0;
 gdjs.GameCode.GDSasulka2Objects6.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects1.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects2.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects3.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects4.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects5.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects6.length = 0;
+gdjs.GameCode.GDTutorObjects1.length = 0;
+gdjs.GameCode.GDTutorObjects2.length = 0;
+gdjs.GameCode.GDTutorObjects3.length = 0;
+gdjs.GameCode.GDTutorObjects4.length = 0;
+gdjs.GameCode.GDTutorObjects5.length = 0;
+gdjs.GameCode.GDTutorObjects6.length = 0;
 gdjs.GameCode.GDPlatformObjects1.length = 0;
 gdjs.GameCode.GDPlatformObjects2.length = 0;
 gdjs.GameCode.GDPlatformObjects3.length = 0;
@@ -1524,72 +1400,12 @@ gdjs.GameCode.GDDuckButtonObjects3.length = 0;
 gdjs.GameCode.GDDuckButtonObjects4.length = 0;
 gdjs.GameCode.GDDuckButtonObjects5.length = 0;
 gdjs.GameCode.GDDuckButtonObjects6.length = 0;
-gdjs.GameCode.GDLimitObjects1.length = 0;
-gdjs.GameCode.GDLimitObjects2.length = 0;
-gdjs.GameCode.GDLimitObjects3.length = 0;
-gdjs.GameCode.GDLimitObjects4.length = 0;
-gdjs.GameCode.GDLimitObjects5.length = 0;
-gdjs.GameCode.GDLimitObjects6.length = 0;
 gdjs.GameCode.GDDinoObjects1.length = 0;
 gdjs.GameCode.GDDinoObjects2.length = 0;
 gdjs.GameCode.GDDinoObjects3.length = 0;
 gdjs.GameCode.GDDinoObjects4.length = 0;
 gdjs.GameCode.GDDinoObjects5.length = 0;
 gdjs.GameCode.GDDinoObjects6.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects1.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects2.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects3.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects4.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects5.length = 0;
-gdjs.GameCode.GDHightObstacle1Objects6.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects1.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects2.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects3.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects4.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects5.length = 0;
-gdjs.GameCode.GDHighObstacle2Objects6.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects1.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects2.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects3.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects4.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects5.length = 0;
-gdjs.GameCode.GDHighObstacle3Objects6.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects1.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects2.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects3.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects4.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects5.length = 0;
-gdjs.GameCode.GDMediumObstacle1Objects6.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects1.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects2.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects3.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects4.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects5.length = 0;
-gdjs.GameCode.GDMediumObstacle2Objects6.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects1.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects2.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects3.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects4.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects5.length = 0;
-gdjs.GameCode.GDMediumObstacle3Objects6.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects1.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects2.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects3.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects4.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects5.length = 0;
-gdjs.GameCode.GDLowObstacle1Objects6.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects1.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects2.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects3.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects4.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects5.length = 0;
-gdjs.GameCode.GDLowObstacle2Objects6.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects1.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects2.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects3.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects4.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects5.length = 0;
-gdjs.GameCode.GDLowObstacle3Objects6.length = 0;
 gdjs.GameCode.GDMan1Objects1.length = 0;
 gdjs.GameCode.GDMan1Objects2.length = 0;
 gdjs.GameCode.GDMan1Objects3.length = 0;
@@ -1614,12 +1430,12 @@ gdjs.GameCode.GDSasulka2Objects3.length = 0;
 gdjs.GameCode.GDSasulka2Objects4.length = 0;
 gdjs.GameCode.GDSasulka2Objects5.length = 0;
 gdjs.GameCode.GDSasulka2Objects6.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects1.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects2.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects3.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects4.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects5.length = 0;
-gdjs.GameCode.GD_951092_951099_951074_951092_951099_951074_951074Objects6.length = 0;
+gdjs.GameCode.GDTutorObjects1.length = 0;
+gdjs.GameCode.GDTutorObjects2.length = 0;
+gdjs.GameCode.GDTutorObjects3.length = 0;
+gdjs.GameCode.GDTutorObjects4.length = 0;
+gdjs.GameCode.GDTutorObjects5.length = 0;
+gdjs.GameCode.GDTutorObjects6.length = 0;
 gdjs.GameCode.GDPlatformObjects1.length = 0;
 gdjs.GameCode.GDPlatformObjects2.length = 0;
 gdjs.GameCode.GDPlatformObjects3.length = 0;

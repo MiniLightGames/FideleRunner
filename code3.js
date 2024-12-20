@@ -3,33 +3,60 @@ gdjs.RegisterCode.localVariables = [];
 gdjs.RegisterCode.GDHeloObjects1= [];
 gdjs.RegisterCode.GDHeloObjects2= [];
 gdjs.RegisterCode.GDHeloObjects3= [];
+gdjs.RegisterCode.GDHeloObjects4= [];
 gdjs.RegisterCode.GDNameObjects1= [];
 gdjs.RegisterCode.GDNameObjects2= [];
 gdjs.RegisterCode.GDNameObjects3= [];
+gdjs.RegisterCode.GDNameObjects4= [];
 gdjs.RegisterCode.GDCityObjects1= [];
 gdjs.RegisterCode.GDCityObjects2= [];
 gdjs.RegisterCode.GDCityObjects3= [];
+gdjs.RegisterCode.GDCityObjects4= [];
 gdjs.RegisterCode.GDPhoneObjects1= [];
 gdjs.RegisterCode.GDPhoneObjects2= [];
 gdjs.RegisterCode.GDPhoneObjects3= [];
+gdjs.RegisterCode.GDPhoneObjects4= [];
 gdjs.RegisterCode.GDRegisterObjects1= [];
 gdjs.RegisterCode.GDRegisterObjects2= [];
 gdjs.RegisterCode.GDRegisterObjects3= [];
+gdjs.RegisterCode.GDRegisterObjects4= [];
 gdjs.RegisterCode.GDPlatformObjects1= [];
 gdjs.RegisterCode.GDPlatformObjects2= [];
 gdjs.RegisterCode.GDPlatformObjects3= [];
+gdjs.RegisterCode.GDPlatformObjects4= [];
 gdjs.RegisterCode.GDDustParticlesObjects1= [];
 gdjs.RegisterCode.GDDustParticlesObjects2= [];
 gdjs.RegisterCode.GDDustParticlesObjects3= [];
+gdjs.RegisterCode.GDDustParticlesObjects4= [];
 gdjs.RegisterCode.GDBackgroundObjects1= [];
 gdjs.RegisterCode.GDBackgroundObjects2= [];
 gdjs.RegisterCode.GDBackgroundObjects3= [];
+gdjs.RegisterCode.GDBackgroundObjects4= [];
 gdjs.RegisterCode.GDMenuBackObjects1= [];
 gdjs.RegisterCode.GDMenuBackObjects2= [];
 gdjs.RegisterCode.GDMenuBackObjects3= [];
+gdjs.RegisterCode.GDMenuBackObjects4= [];
 
 
 gdjs.RegisterCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
+gdjs.copyArray(asyncObjectsList.getObjects("Register"), gdjs.RegisterCode.GDRegisterObjects3);
+
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "ButtonTimer");
+}{for(var i = 0, len = gdjs.RegisterCode.GDRegisterObjects3.length ;i < len;++i) {
+    gdjs.RegisterCode.GDRegisterObjects3[i].SetLabelText("Произошла ошибка", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
 
 {
 
@@ -45,7 +72,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.RegisterCode.asyncCallback13124452 = function (runtimeScene, asyncObjectsList) {
+};gdjs.RegisterCode.asyncCallback14387308 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.RegisterCode.localVariables);
 
 { //Subevents
@@ -61,7 +88,8 @@ gdjs.RegisterCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.RegisterCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.RegisterCode.asyncCallback13124452(runtimeScene, asyncObjectsList)));
+for (const obj of gdjs.RegisterCode.GDRegisterObjects1) asyncObjectsList.addObject("Register", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.RegisterCode.asyncCallback14387308(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -75,7 +103,11 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteR
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "NewPlayer", "https://fidelerunner-1043.restdb.io/rest/player", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+/* Reuse gdjs.RegisterCode.GDRegisterObjects1 */
+{for(var i = 0, len = gdjs.RegisterCode.GDRegisterObjects1.length ;i < len;++i) {
+    gdjs.RegisterCode.GDRegisterObjects1[i].SetLabelText("Обработка...", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "NewPlayer", "https://fidelerunner-1043.restdb.io/rest/player", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "NewPlayer", "POST", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "NewPlayer", "content-type", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "6761a5a0518e81773d087eee", "NewPlayer", "x-apikey", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -102,6 +134,72 @@ gdjs.copyArray(runtimeScene.getObjects("Phone"), gdjs.RegisterCode.GDPhoneObject
 {runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Name").setString((( gdjs.RegisterCode.GDNameObjects2.length === 0 ) ? "" :gdjs.RegisterCode.GDNameObjects2[0].getBehavior("Text").getText()));
 }{runtimeScene.getScene().getVariables().getFromIndex(2).getChild("City").setString((( gdjs.RegisterCode.GDCityObjects2.length === 0 ) ? "" :gdjs.RegisterCode.GDCityObjects2[0].getBehavior("Text").getText()));
 }{runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Phone").setString((( gdjs.RegisterCode.GDPhoneObjects2.length === 0 ) ? "" :gdjs.RegisterCode.GDPhoneObjects2[0].getBehavior("Text").getText()));
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = (gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Name"))).includes("");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Name"), gdjs.RegisterCode.GDNameObjects2);
+gdjs.copyArray(gdjs.RegisterCode.GDRegisterObjects1, gdjs.RegisterCode.GDRegisterObjects2);
+
+{for(var i = 0, len = gdjs.RegisterCode.GDNameObjects2.length ;i < len;++i) {
+    gdjs.RegisterCode.GDNameObjects2[i].setPlaceholder("Напишите своё ФИО");
+}
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "ButtonTimer");
+}{for(var i = 0, len = gdjs.RegisterCode.GDRegisterObjects2.length ;i < len;++i) {
+    gdjs.RegisterCode.GDRegisterObjects2[i].SetLabelText("Заполните все поля", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = (gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("City"))).includes("");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("City"), gdjs.RegisterCode.GDCityObjects2);
+gdjs.copyArray(gdjs.RegisterCode.GDRegisterObjects1, gdjs.RegisterCode.GDRegisterObjects2);
+
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "ButtonTimer");
+}{for(var i = 0, len = gdjs.RegisterCode.GDRegisterObjects2.length ;i < len;++i) {
+    gdjs.RegisterCode.GDRegisterObjects2[i].SetLabelText("Заполните все поля", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.RegisterCode.GDCityObjects2.length ;i < len;++i) {
+    gdjs.RegisterCode.GDCityObjects2[i].setPlaceholder("Напишите свой город");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = (gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Phone"))).includes("");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Phone"), gdjs.RegisterCode.GDPhoneObjects2);
+gdjs.copyArray(gdjs.RegisterCode.GDRegisterObjects1, gdjs.RegisterCode.GDRegisterObjects2);
+
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "ButtonTimer");
+}{for(var i = 0, len = gdjs.RegisterCode.GDRegisterObjects2.length ;i < len;++i) {
+    gdjs.RegisterCode.GDRegisterObjects2[i].SetLabelText("Заполните все поля", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.RegisterCode.GDPhoneObjects2.length ;i < len;++i) {
+    gdjs.RegisterCode.GDPhoneObjects2[i].setPlaceholder("Напишите свой телефон");
+}
 }}
 
 }
@@ -186,6 +284,23 @@ gdjs.RegisterCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "ButtonTimer") >= 3;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Register"), gdjs.RegisterCode.GDRegisterObjects1);
+{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "ButtonTimer");
+}{for(var i = 0, len = gdjs.RegisterCode.GDRegisterObjects1.length ;i < len;++i) {
+    gdjs.RegisterCode.GDRegisterObjects1[i].SetLabelText("Зарегистрироваться", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
 };
 
 gdjs.RegisterCode.func = function(runtimeScene) {
@@ -194,59 +309,77 @@ runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.RegisterCode.GDHeloObjects1.length = 0;
 gdjs.RegisterCode.GDHeloObjects2.length = 0;
 gdjs.RegisterCode.GDHeloObjects3.length = 0;
+gdjs.RegisterCode.GDHeloObjects4.length = 0;
 gdjs.RegisterCode.GDNameObjects1.length = 0;
 gdjs.RegisterCode.GDNameObjects2.length = 0;
 gdjs.RegisterCode.GDNameObjects3.length = 0;
+gdjs.RegisterCode.GDNameObjects4.length = 0;
 gdjs.RegisterCode.GDCityObjects1.length = 0;
 gdjs.RegisterCode.GDCityObjects2.length = 0;
 gdjs.RegisterCode.GDCityObjects3.length = 0;
+gdjs.RegisterCode.GDCityObjects4.length = 0;
 gdjs.RegisterCode.GDPhoneObjects1.length = 0;
 gdjs.RegisterCode.GDPhoneObjects2.length = 0;
 gdjs.RegisterCode.GDPhoneObjects3.length = 0;
+gdjs.RegisterCode.GDPhoneObjects4.length = 0;
 gdjs.RegisterCode.GDRegisterObjects1.length = 0;
 gdjs.RegisterCode.GDRegisterObjects2.length = 0;
 gdjs.RegisterCode.GDRegisterObjects3.length = 0;
+gdjs.RegisterCode.GDRegisterObjects4.length = 0;
 gdjs.RegisterCode.GDPlatformObjects1.length = 0;
 gdjs.RegisterCode.GDPlatformObjects2.length = 0;
 gdjs.RegisterCode.GDPlatformObjects3.length = 0;
+gdjs.RegisterCode.GDPlatformObjects4.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects1.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects2.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects3.length = 0;
+gdjs.RegisterCode.GDDustParticlesObjects4.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects1.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects2.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects3.length = 0;
+gdjs.RegisterCode.GDBackgroundObjects4.length = 0;
 gdjs.RegisterCode.GDMenuBackObjects1.length = 0;
 gdjs.RegisterCode.GDMenuBackObjects2.length = 0;
 gdjs.RegisterCode.GDMenuBackObjects3.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects4.length = 0;
 
 gdjs.RegisterCode.eventsList4(runtimeScene);
 gdjs.RegisterCode.GDHeloObjects1.length = 0;
 gdjs.RegisterCode.GDHeloObjects2.length = 0;
 gdjs.RegisterCode.GDHeloObjects3.length = 0;
+gdjs.RegisterCode.GDHeloObjects4.length = 0;
 gdjs.RegisterCode.GDNameObjects1.length = 0;
 gdjs.RegisterCode.GDNameObjects2.length = 0;
 gdjs.RegisterCode.GDNameObjects3.length = 0;
+gdjs.RegisterCode.GDNameObjects4.length = 0;
 gdjs.RegisterCode.GDCityObjects1.length = 0;
 gdjs.RegisterCode.GDCityObjects2.length = 0;
 gdjs.RegisterCode.GDCityObjects3.length = 0;
+gdjs.RegisterCode.GDCityObjects4.length = 0;
 gdjs.RegisterCode.GDPhoneObjects1.length = 0;
 gdjs.RegisterCode.GDPhoneObjects2.length = 0;
 gdjs.RegisterCode.GDPhoneObjects3.length = 0;
+gdjs.RegisterCode.GDPhoneObjects4.length = 0;
 gdjs.RegisterCode.GDRegisterObjects1.length = 0;
 gdjs.RegisterCode.GDRegisterObjects2.length = 0;
 gdjs.RegisterCode.GDRegisterObjects3.length = 0;
+gdjs.RegisterCode.GDRegisterObjects4.length = 0;
 gdjs.RegisterCode.GDPlatformObjects1.length = 0;
 gdjs.RegisterCode.GDPlatformObjects2.length = 0;
 gdjs.RegisterCode.GDPlatformObjects3.length = 0;
+gdjs.RegisterCode.GDPlatformObjects4.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects1.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects2.length = 0;
 gdjs.RegisterCode.GDDustParticlesObjects3.length = 0;
+gdjs.RegisterCode.GDDustParticlesObjects4.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects1.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects2.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects3.length = 0;
+gdjs.RegisterCode.GDBackgroundObjects4.length = 0;
 gdjs.RegisterCode.GDMenuBackObjects1.length = 0;
 gdjs.RegisterCode.GDMenuBackObjects2.length = 0;
 gdjs.RegisterCode.GDMenuBackObjects3.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects4.length = 0;
 
 
 return;
