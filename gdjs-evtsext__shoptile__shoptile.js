@@ -14,6 +14,7 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile = class ShopTile extends gdjs.CustomRu
     
     this._objectData.PriceContent = objectData.content.PriceContent !== undefined ? objectData.content.PriceContent : Number("0") || 0;
     this._objectData.ID = objectData.content.ID !== undefined ? objectData.content.ID : "\"0\"";
+    this._objectData.ImageID = objectData.content.ImageID !== undefined ? objectData.content.ImageID : Number("") || 0;
     
     this._animator = new gdjs.SpriteAnimator(
         objectData.animatable.animations,
@@ -32,6 +33,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile = class ShopTile extends gdjs.CustomRu
       this._objectData.PriceContent = newObjectData.content.PriceContent;
     if (oldObjectData.content.ID !== newObjectData.content.ID)
       this._objectData.ID = newObjectData.content.ID;
+    if (oldObjectData.content.ImageID !== newObjectData.content.ImageID)
+      this._objectData.ImageID = newObjectData.content.ImageID;
 
     this.onHotReloading(this._parentInstanceContainer);
     return true;
@@ -50,6 +53,12 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile = class ShopTile extends gdjs.CustomRu
   }
   _setID(newValue) {
     this._objectData.ID = newValue;
+  }
+  _getImageID() {
+    return this._objectData.ImageID !== undefined ? this._objectData.ImageID : Number("") || 0;
+  }
+  _setImageID(newValue) {
+    this._objectData.ImageID = newValue;
   }
 
   
@@ -137,6 +146,7 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.eventsList
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(eventsFunctionContext.getObjects("Back"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDBackObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Code"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDCodeObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Content"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDContentObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1);
@@ -158,6 +168,12 @@ gdjs.Variable.copy(eventsFunctionContext.getArgument("PromoCode"), eventsFunctio
 }
 }{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1[i]._setID(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild("_id").getAsString());
+}
+}{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1[i]._setImageID(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild("ImageID").getAsNumber());
+}
+}{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDBackObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDBackObjects1[i].setAnimationFrame(eventsFunctionContext.getObjects("Object")[0]._getImageID());
 }
 }}
 

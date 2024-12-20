@@ -32,6 +32,22 @@ gdjs.IntroCode.GDMoneyValueObjects1= [];
 gdjs.IntroCode.GDMoneyValueObjects2= [];
 gdjs.IntroCode.GDMoneyValueObjects3= [];
 gdjs.IntroCode.GDMoneyValueObjects4= [];
+gdjs.IntroCode.GDTitle2Objects1= [];
+gdjs.IntroCode.GDTitle2Objects2= [];
+gdjs.IntroCode.GDTitle2Objects3= [];
+gdjs.IntroCode.GDTitle2Objects4= [];
+gdjs.IntroCode.GDTitle3Objects1= [];
+gdjs.IntroCode.GDTitle3Objects2= [];
+gdjs.IntroCode.GDTitle3Objects3= [];
+gdjs.IntroCode.GDTitle3Objects4= [];
+gdjs.IntroCode.GDPlayObjects1= [];
+gdjs.IntroCode.GDPlayObjects2= [];
+gdjs.IntroCode.GDPlayObjects3= [];
+gdjs.IntroCode.GDPlayObjects4= [];
+gdjs.IntroCode.GDShop2Objects1= [];
+gdjs.IntroCode.GDShop2Objects2= [];
+gdjs.IntroCode.GDShop2Objects3= [];
+gdjs.IntroCode.GDShop2Objects4= [];
 gdjs.IntroCode.GDPlatformObjects1= [];
 gdjs.IntroCode.GDPlatformObjects2= [];
 gdjs.IntroCode.GDPlatformObjects3= [];
@@ -44,6 +60,10 @@ gdjs.IntroCode.GDBackgroundObjects1= [];
 gdjs.IntroCode.GDBackgroundObjects2= [];
 gdjs.IntroCode.GDBackgroundObjects3= [];
 gdjs.IntroCode.GDBackgroundObjects4= [];
+gdjs.IntroCode.GDMenuBackObjects1= [];
+gdjs.IntroCode.GDMenuBackObjects2= [];
+gdjs.IntroCode.GDMenuBackObjects3= [];
+gdjs.IntroCode.GDMenuBackObjects4= [];
 
 
 gdjs.IntroCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
@@ -87,7 +107,7 @@ if (true)
 }
 
 
-};gdjs.IntroCode.asyncCallback12648188 = function (runtimeScene, asyncObjectsList) {
+};gdjs.IntroCode.asyncCallback14578324 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 
 { //Subevents
@@ -104,14 +124,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(4), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback12648188(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(4), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback14578324(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.IntroCode.asyncCallback12647820 = function (runtimeScene, asyncObjectsList) {
+};gdjs.IntroCode.asyncCallback14578092 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 
 { //Subevents
@@ -127,7 +147,7 @@ gdjs.IntroCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "Promo", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback12647820(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "Promo", runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.IntroCode.asyncCallback14578092(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -162,17 +182,17 @@ gdjs.IntroCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignArrowObjects2Objects = Hashtable.newFrom({"SignArrow": gdjs.IntroCode.GDSignArrowObjects2});
-gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects1Objects = Hashtable.newFrom({"Sign": gdjs.IntroCode.GDSignObjects1});
+};gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.IntroCode.GDPlayObjects2});
+gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDShop2Objects1Objects = Hashtable.newFrom({"Shop2": gdjs.IntroCode.GDShop2Objects1});
 gdjs.IntroCode.eventsList5 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("SignArrow"), gdjs.IntroCode.GDSignArrowObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Play"), gdjs.IntroCode.GDPlayObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignArrowObjects2Objects, runtimeScene, false, false);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDPlayObjects2Objects, runtimeScene, false, false);
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
 }}
@@ -189,11 +209,11 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Sign"), gdjs.IntroCode.GDSignObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Shop2"), gdjs.IntroCode.GDShop2Objects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects1Objects, runtimeScene, true, false);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDShop2Objects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Shop", false);
 }}
@@ -218,55 +238,7 @@ gdjs.IntroCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects2Objects = Hashtable.newFrom({"Sign": gdjs.IntroCode.GDSignObjects2});
-gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects1Objects = Hashtable.newFrom({"Sign": gdjs.IntroCode.GDSignObjects1});
-gdjs.IntroCode.eventsList7 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Sign"), gdjs.IntroCode.GDSignObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects2Objects, runtimeScene, true, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12652036);
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.IntroCode.GDScoreTextObjects2);
-{for(var i = 0, len = gdjs.IntroCode.GDScoreTextObjects2.length ;i < len;++i) {
-    gdjs.IntroCode.GDScoreTextObjects2[i].getBehavior("Effect").enableEffect("Hovering", true);
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Sign"), gdjs.IntroCode.GDSignObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.IntroCode.mapOfGDgdjs_9546IntroCode_9546GDSignObjects1Objects, runtimeScene, true, true);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12652940);
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.IntroCode.GDScoreTextObjects1);
-{for(var i = 0, len = gdjs.IntroCode.GDScoreTextObjects1.length ;i < len;++i) {
-    gdjs.IntroCode.GDScoreTextObjects1[i].getBehavior("Effect").enableEffect("Hovering", false);
-}
-}}
-
-}
-
-
-};gdjs.IntroCode.eventsList8 = function(runtimeScene) {
+};gdjs.IntroCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -280,7 +252,6 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.IntroCode.GDScoreTextO
 {for(var i = 0, len = gdjs.IntroCode.GDScoreTextObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDScoreTextObjects1[i].setTextAlignment("center");
 }
-}{gdjs.evtTools.sound.playMusic(runtimeScene, "LeaderboardMusic.mp3", true, 30, 1);
 }{gdjs.evtTools.storage.readStringFromJSONFile("Saves", "Saves", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1));
 }{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(1));
 }{for(var i = 0, len = gdjs.IntroCode.GDMoneyValueObjects1.length ;i < len;++i) {
@@ -310,13 +281,6 @@ let isConditionTrue_0 = false;
 
 
 gdjs.IntroCode.eventsList6(runtimeScene);
-}
-
-
-{
-
-
-gdjs.IntroCode.eventsList7(runtimeScene);
 }
 
 
@@ -367,6 +331,22 @@ gdjs.IntroCode.GDMoneyValueObjects1.length = 0;
 gdjs.IntroCode.GDMoneyValueObjects2.length = 0;
 gdjs.IntroCode.GDMoneyValueObjects3.length = 0;
 gdjs.IntroCode.GDMoneyValueObjects4.length = 0;
+gdjs.IntroCode.GDTitle2Objects1.length = 0;
+gdjs.IntroCode.GDTitle2Objects2.length = 0;
+gdjs.IntroCode.GDTitle2Objects3.length = 0;
+gdjs.IntroCode.GDTitle2Objects4.length = 0;
+gdjs.IntroCode.GDTitle3Objects1.length = 0;
+gdjs.IntroCode.GDTitle3Objects2.length = 0;
+gdjs.IntroCode.GDTitle3Objects3.length = 0;
+gdjs.IntroCode.GDTitle3Objects4.length = 0;
+gdjs.IntroCode.GDPlayObjects1.length = 0;
+gdjs.IntroCode.GDPlayObjects2.length = 0;
+gdjs.IntroCode.GDPlayObjects3.length = 0;
+gdjs.IntroCode.GDPlayObjects4.length = 0;
+gdjs.IntroCode.GDShop2Objects1.length = 0;
+gdjs.IntroCode.GDShop2Objects2.length = 0;
+gdjs.IntroCode.GDShop2Objects3.length = 0;
+gdjs.IntroCode.GDShop2Objects4.length = 0;
 gdjs.IntroCode.GDPlatformObjects1.length = 0;
 gdjs.IntroCode.GDPlatformObjects2.length = 0;
 gdjs.IntroCode.GDPlatformObjects3.length = 0;
@@ -379,8 +359,12 @@ gdjs.IntroCode.GDBackgroundObjects1.length = 0;
 gdjs.IntroCode.GDBackgroundObjects2.length = 0;
 gdjs.IntroCode.GDBackgroundObjects3.length = 0;
 gdjs.IntroCode.GDBackgroundObjects4.length = 0;
+gdjs.IntroCode.GDMenuBackObjects1.length = 0;
+gdjs.IntroCode.GDMenuBackObjects2.length = 0;
+gdjs.IntroCode.GDMenuBackObjects3.length = 0;
+gdjs.IntroCode.GDMenuBackObjects4.length = 0;
 
-gdjs.IntroCode.eventsList8(runtimeScene);
+gdjs.IntroCode.eventsList7(runtimeScene);
 gdjs.IntroCode.GDScoreTextObjects1.length = 0;
 gdjs.IntroCode.GDScoreTextObjects2.length = 0;
 gdjs.IntroCode.GDScoreTextObjects3.length = 0;
@@ -413,6 +397,22 @@ gdjs.IntroCode.GDMoneyValueObjects1.length = 0;
 gdjs.IntroCode.GDMoneyValueObjects2.length = 0;
 gdjs.IntroCode.GDMoneyValueObjects3.length = 0;
 gdjs.IntroCode.GDMoneyValueObjects4.length = 0;
+gdjs.IntroCode.GDTitle2Objects1.length = 0;
+gdjs.IntroCode.GDTitle2Objects2.length = 0;
+gdjs.IntroCode.GDTitle2Objects3.length = 0;
+gdjs.IntroCode.GDTitle2Objects4.length = 0;
+gdjs.IntroCode.GDTitle3Objects1.length = 0;
+gdjs.IntroCode.GDTitle3Objects2.length = 0;
+gdjs.IntroCode.GDTitle3Objects3.length = 0;
+gdjs.IntroCode.GDTitle3Objects4.length = 0;
+gdjs.IntroCode.GDPlayObjects1.length = 0;
+gdjs.IntroCode.GDPlayObjects2.length = 0;
+gdjs.IntroCode.GDPlayObjects3.length = 0;
+gdjs.IntroCode.GDPlayObjects4.length = 0;
+gdjs.IntroCode.GDShop2Objects1.length = 0;
+gdjs.IntroCode.GDShop2Objects2.length = 0;
+gdjs.IntroCode.GDShop2Objects3.length = 0;
+gdjs.IntroCode.GDShop2Objects4.length = 0;
 gdjs.IntroCode.GDPlatformObjects1.length = 0;
 gdjs.IntroCode.GDPlatformObjects2.length = 0;
 gdjs.IntroCode.GDPlatformObjects3.length = 0;
@@ -425,6 +425,10 @@ gdjs.IntroCode.GDBackgroundObjects1.length = 0;
 gdjs.IntroCode.GDBackgroundObjects2.length = 0;
 gdjs.IntroCode.GDBackgroundObjects3.length = 0;
 gdjs.IntroCode.GDBackgroundObjects4.length = 0;
+gdjs.IntroCode.GDMenuBackObjects1.length = 0;
+gdjs.IntroCode.GDMenuBackObjects2.length = 0;
+gdjs.IntroCode.GDMenuBackObjects3.length = 0;
+gdjs.IntroCode.GDMenuBackObjects4.length = 0;
 
 
 return;

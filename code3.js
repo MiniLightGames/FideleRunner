@@ -24,6 +24,9 @@ gdjs.RegisterCode.GDDustParticlesObjects3= [];
 gdjs.RegisterCode.GDBackgroundObjects1= [];
 gdjs.RegisterCode.GDBackgroundObjects2= [];
 gdjs.RegisterCode.GDBackgroundObjects3= [];
+gdjs.RegisterCode.GDMenuBackObjects1= [];
+gdjs.RegisterCode.GDMenuBackObjects2= [];
+gdjs.RegisterCode.GDMenuBackObjects3= [];
 
 
 gdjs.RegisterCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
@@ -42,7 +45,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.RegisterCode.asyncCallback12823492 = function (runtimeScene, asyncObjectsList) {
+};gdjs.RegisterCode.asyncCallback14817868 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.RegisterCode.localVariables);
 
 { //Subevents
@@ -58,7 +61,7 @@ gdjs.RegisterCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.RegisterCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.RegisterCode.asyncCallback12823492(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "NewPlayer", runtimeScene.getScene().getVariables().getFromIndex(0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.RegisterCode.asyncCallback14817868(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -212,6 +215,9 @@ gdjs.RegisterCode.GDDustParticlesObjects3.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects1.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects2.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects3.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects1.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects2.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects3.length = 0;
 
 gdjs.RegisterCode.eventsList4(runtimeScene);
 gdjs.RegisterCode.GDHeloObjects1.length = 0;
@@ -238,6 +244,9 @@ gdjs.RegisterCode.GDDustParticlesObjects3.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects1.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects2.length = 0;
 gdjs.RegisterCode.GDBackgroundObjects3.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects1.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects2.length = 0;
+gdjs.RegisterCode.GDMenuBackObjects3.length = 0;
 
 
 return;

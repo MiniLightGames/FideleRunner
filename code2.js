@@ -20,6 +20,8 @@ gdjs.LeaderboardCode.GDDustParticlesObjects1= [];
 gdjs.LeaderboardCode.GDDustParticlesObjects2= [];
 gdjs.LeaderboardCode.GDBackgroundObjects1= [];
 gdjs.LeaderboardCode.GDBackgroundObjects2= [];
+gdjs.LeaderboardCode.GDMenuBackObjects1= [];
+gdjs.LeaderboardCode.GDMenuBackObjects2= [];
 
 
 gdjs.LeaderboardCode.eventsList0 = function(runtimeScene) {
@@ -32,8 +34,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("MineyValue"), gdjs.LeaderboardCode.GDMineyValueObjects1);
-{gdjs.evtTools.sound.playMusic(runtimeScene, "LeaderboardMusic.mp3", true, 70, 1);
-}{for(var i = 0, len = gdjs.LeaderboardCode.GDMineyValueObjects1.length ;i < len;++i) {
+{for(var i = 0, len = gdjs.LeaderboardCode.GDMineyValueObjects1.length ;i < len;++i) {
     gdjs.LeaderboardCode.GDMineyValueObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()));
 }
 }{gdjs.evtTools.storage.writeStringInJSONFile("Saves", "Saves", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)));
@@ -109,6 +110,8 @@ gdjs.LeaderboardCode.GDDustParticlesObjects1.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects2.length = 0;
 gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
 gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
+gdjs.LeaderboardCode.GDMenuBackObjects1.length = 0;
+gdjs.LeaderboardCode.GDMenuBackObjects2.length = 0;
 
 gdjs.LeaderboardCode.eventsList0(runtimeScene);
 gdjs.LeaderboardCode.GDPanelObjects1.length = 0;
@@ -131,6 +134,8 @@ gdjs.LeaderboardCode.GDDustParticlesObjects1.length = 0;
 gdjs.LeaderboardCode.GDDustParticlesObjects2.length = 0;
 gdjs.LeaderboardCode.GDBackgroundObjects1.length = 0;
 gdjs.LeaderboardCode.GDBackgroundObjects2.length = 0;
+gdjs.LeaderboardCode.GDMenuBackObjects1.length = 0;
+gdjs.LeaderboardCode.GDMenuBackObjects2.length = 0;
 
 
 return;
