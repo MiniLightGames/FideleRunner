@@ -33,9 +33,13 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("DistValue"), gdjs.LeaderboardCode.GDDistValueObjects1);
 gdjs.copyArray(runtimeScene.getObjects("MineyValue"), gdjs.LeaderboardCode.GDMineyValueObjects1);
 {for(var i = 0, len = gdjs.LeaderboardCode.GDMineyValueObjects1.length ;i < len;++i) {
     gdjs.LeaderboardCode.GDMineyValueObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()));
+}
+}{for(var i = 0, len = gdjs.LeaderboardCode.GDDistValueObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDDistValueObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Score").getAsString());
 }
 }{gdjs.evtTools.storage.writeStringInJSONFile("Saves", "Saves", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }}
