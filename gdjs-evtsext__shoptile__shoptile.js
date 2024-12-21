@@ -137,6 +137,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObj
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObjects2= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPricebackObjects1= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPricebackObjects2= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceTitleObjects1= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceTitleObjects2= [];
 
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -161,7 +163,7 @@ gdjs.Variable.copy(eventsFunctionContext.getArgument("PromoCode"), eventsFunctio
     gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDContentObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild("Content").getAsString());
 }
 }{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("Цена: " + eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild("price").getAsString());
+    gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild("price").getAsString() + " Заказов");
 }
 }{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1[i]._setPriceContent(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild("price").getAsNumber());
@@ -202,6 +204,8 @@ var thisGDPriceObjectsList = [...runtimeScene.getObjects("Price")];
 var GDPriceObjects = Hashtable.newFrom({"Price": thisGDPriceObjectsList});
 var thisGDPricebackObjectsList = [...runtimeScene.getObjects("Priceback")];
 var GDPricebackObjects = Hashtable.newFrom({"Priceback": thisGDPricebackObjectsList});
+var thisGDPriceTitleObjectsList = [...runtimeScene.getObjects("PriceTitle")];
+var GDPriceTitleObjects = Hashtable.newFrom({"PriceTitle": thisGDPriceTitleObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -212,6 +216,7 @@ var eventsFunctionContext = {
 , "Back": GDBackObjects
 , "Price": GDPriceObjects
 , "Priceback": GDPricebackObjects
+, "PriceTitle": GDPriceTitleObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -222,6 +227,7 @@ var eventsFunctionContext = {
 , "Back": thisGDBackObjectsList
 , "Price": thisGDPriceObjectsList
 , "Priceback": thisGDPricebackObjectsList
+, "PriceTitle": thisGDPriceTitleObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -287,6 +293,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObj
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceTitleObjects2.length = 0;
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDObjectObjects1.length = 0;
@@ -305,6 +313,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObj
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.ChangeBackContext.GDPriceTitleObjects2.length = 0;
 
 
 return;
@@ -326,6 +336,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects1
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects2= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPricebackObjects1= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPricebackObjects2= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects1= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects2= [];
 
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -338,6 +350,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Back"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDBackObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Buy"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDBuyObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Price"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects1);
+gdjs.copyArray(eventsFunctionContext.getObjects("PriceTitle"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDBackObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDBackObjects1[i].hide();
 }
@@ -349,6 +362,9 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Price"), gdjs.evtsExt__ShopTile
 }
 }{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDBuyObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDBuyObjects1[i].Activate(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects1[i].hide();
 }
 }}
 
@@ -377,6 +393,8 @@ var thisGDPriceObjectsList = [...runtimeScene.getObjects("Price")];
 var GDPriceObjects = Hashtable.newFrom({"Price": thisGDPriceObjectsList});
 var thisGDPricebackObjectsList = [...runtimeScene.getObjects("Priceback")];
 var GDPricebackObjects = Hashtable.newFrom({"Priceback": thisGDPricebackObjectsList});
+var thisGDPriceTitleObjectsList = [...runtimeScene.getObjects("PriceTitle")];
+var GDPriceTitleObjects = Hashtable.newFrom({"PriceTitle": thisGDPriceTitleObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -387,6 +405,7 @@ var eventsFunctionContext = {
 , "Back": GDBackObjects
 , "Price": GDPriceObjects
 , "Priceback": GDPricebackObjects
+, "PriceTitle": GDPriceTitleObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -397,6 +416,7 @@ var eventsFunctionContext = {
 , "Back": thisGDBackObjectsList
 , "Price": thisGDPriceObjectsList
 , "Priceback": thisGDPricebackObjectsList
+, "PriceTitle": thisGDPriceTitleObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -461,6 +481,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects1
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects2.length = 0;
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDObjectObjects1.length = 0;
@@ -479,6 +501,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects1
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsBuyContext.GDPriceTitleObjects2.length = 0;
 
 
 return;
@@ -500,6 +524,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPr
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceObjects2= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPricebackObjects1= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPricebackObjects2= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects1= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects2= [];
 
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -515,6 +541,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Back"), gdjs.evtsExt__ShopTile_
 /* Reuse gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDBuyObjects1 */
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Price"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceObjects1);
+gdjs.copyArray(eventsFunctionContext.getObjects("PriceTitle"), gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDBackObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDBackObjects1[i].hide();
 }
@@ -530,6 +557,9 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Price"), gdjs.evtsExt__ShopTile
 }{runtimeScene.getGame().getVariables().get("Saves").getChild("Money").sub(eventsFunctionContext.getObjects("Object")[0]._getPriceContent());
 }{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().get("BuyPromos"), (( gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDObjectObjects1[0]._getID()));
 }{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1).setBoolean(true);
+}{for(var i = 0, len = gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects1[i].hide();
+}
 }}
 
 }
@@ -582,6 +612,8 @@ var thisGDPriceObjectsList = [...runtimeScene.getObjects("Price")];
 var GDPriceObjects = Hashtable.newFrom({"Price": thisGDPriceObjectsList});
 var thisGDPricebackObjectsList = [...runtimeScene.getObjects("Priceback")];
 var GDPricebackObjects = Hashtable.newFrom({"Priceback": thisGDPricebackObjectsList});
+var thisGDPriceTitleObjectsList = [...runtimeScene.getObjects("PriceTitle")];
+var GDPriceTitleObjects = Hashtable.newFrom({"PriceTitle": thisGDPriceTitleObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -592,6 +624,7 @@ var eventsFunctionContext = {
 , "Back": GDBackObjects
 , "Price": GDPriceObjects
 , "Priceback": GDPricebackObjects
+, "PriceTitle": GDPriceTitleObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -602,6 +635,7 @@ var eventsFunctionContext = {
 , "Back": thisGDBackObjectsList
 , "Price": thisGDPriceObjectsList
 , "Priceback": thisGDPricebackObjectsList
+, "PriceTitle": thisGDPriceTitleObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -666,6 +700,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPr
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects2.length = 0;
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.eventsList1(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
@@ -684,6 +720,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPr
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.doStepPostEventsContext.GDPriceTitleObjects2.length = 0;
 
 
 return;
@@ -705,6 +743,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceObject
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceObjects2= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPricebackObjects1= [];
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPricebackObjects2= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceTitleObjects1= [];
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceTitleObjects2= [];
 
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -743,6 +783,8 @@ var thisGDPriceObjectsList = [...runtimeScene.getObjects("Price")];
 var GDPriceObjects = Hashtable.newFrom({"Price": thisGDPriceObjectsList});
 var thisGDPricebackObjectsList = [...runtimeScene.getObjects("Priceback")];
 var GDPricebackObjects = Hashtable.newFrom({"Priceback": thisGDPricebackObjectsList});
+var thisGDPriceTitleObjectsList = [...runtimeScene.getObjects("PriceTitle")];
+var GDPriceTitleObjects = Hashtable.newFrom({"PriceTitle": thisGDPriceTitleObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -753,6 +795,7 @@ var eventsFunctionContext = {
 , "Back": GDBackObjects
 , "Price": GDPriceObjects
 , "Priceback": GDPricebackObjects
+, "PriceTitle": GDPriceTitleObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -763,6 +806,7 @@ var eventsFunctionContext = {
 , "Back": thisGDBackObjectsList
 , "Price": thisGDPriceObjectsList
 , "Priceback": thisGDPricebackObjectsList
+, "PriceTitle": thisGDPriceTitleObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -827,6 +871,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceObject
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceTitleObjects2.length = 0;
 
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDObjectObjects1.length = 0;
@@ -845,6 +891,8 @@ gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceObject
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceObjects2.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPricebackObjects1.length = 0;
 gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPricebackObjects2.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceTitleObjects1.length = 0;
+gdjs.evtsExt__ShopTile__ShopTile.ShopTile.prototype.IsByingContext.GDPriceTitleObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;

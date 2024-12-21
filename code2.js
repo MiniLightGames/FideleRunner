@@ -39,7 +39,7 @@ gdjs.copyArray(runtimeScene.getObjects("MineyValue"), gdjs.LeaderboardCode.GDMin
     gdjs.LeaderboardCode.GDMineyValueObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()));
 }
 }{for(var i = 0, len = gdjs.LeaderboardCode.GDDistValueObjects1.length ;i < len;++i) {
-    gdjs.LeaderboardCode.GDDistValueObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Score").getAsString());
+    gdjs.LeaderboardCode.GDDistValueObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Score").getAsString() + " метров");
 }
 }{gdjs.evtTools.storage.writeStringInJSONFile("Saves", "Saves", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }}
