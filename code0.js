@@ -140,7 +140,6 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.IntroCode.GDScoreTextO
 }
 }{gdjs.evtTools.storage.readStringFromJSONFile("Shop", "Shop", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1));
 }{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)), runtimeScene.getGame().getVariables().getFromIndex(6));
-}{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Money").setNumber(50000);
 }
 { //Subevents
 gdjs.IntroCode.eventsList0(runtimeScene);} //End of subevents
